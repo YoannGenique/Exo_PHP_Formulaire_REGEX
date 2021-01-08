@@ -33,7 +33,7 @@
             // img dossier temp
             $file_tmp_name = $_FILES['user_avatar']['tmp_name'];
             // Chemin du dossier de sav
-            $file_dest= 'img/'.$file_name;
+            $file_dest= "img/$user_name.".$file_name;
             // extension de photo autorisée
             $extension_autorise = array('.jpeg','.jpg','.png','.gif','.webp');
             // Fin IMG
@@ -114,7 +114,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="user_mail" class="form-label">Email Utilisateur</label>
-                        <input name="user_mail" type="email" class="form-control" id="exampleInputPassword1">
+                        <input name="user_mail" type="text" class="form-control" id="exampleInputPassword1">
                     </div>
                     <div class="mb-3">
                         <label for="user_avatar" class="form-label">Photo de Profil Utilisateur</label>
